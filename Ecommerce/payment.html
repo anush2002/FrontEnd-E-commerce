@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Payment</title>
+</head>
+<body>
+<div class="payment-container">
+  <div class="payment-card">
+    <form action="#" method="post">
+      <h2>Payment Details</h2>
+      <div class="form-group">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="contact-number">Contact Number</label>
+        <input type="tel" id="contact-number" name="contact-number" required>
+      </div>
+      <div class="form-group">
+        <label for="payment-method">Payment Method</label>
+        <select id="payment-method" name="payment-method" required>
+          <option value="">--Please choose an option--</option>
+          <option value="online">Online</option>
+          <option value="cash-on-delivery">Cash on Delivery</option>
+          <option value="prepayment">Prepayment</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Submit Payment">
+      </div>
+    </form>
+  </div>
+</div>
+
+  
+</body>
+</html>

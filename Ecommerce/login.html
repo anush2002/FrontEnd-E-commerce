@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TrendyThreads</title>
+</head>
+<body>
+        <div class="card-container">
+          <form action="LoginServlet" method="post" class="form form-login">
+            <h2 class="form-title">Login</h2>
+            <div class="form-field">
+              <label class="user" for="login-username">
+                <span class="hidden">Username</span>
+              </label>
+              <input id="login-username" type="text" class="form-input" placeholder="Username" name="userName" required/>
+            </div>
+            <div class="form-field">
+              <label class="lock" for="login-password">
+                <span class="hidden">Password</span>
+              </label>
+              <input id="login-password" type="password" class="form-input" placeholder="Password" name="userPwd" required>
+            </div>
+            <div class="form-field">
+              <input type="submit" value="Login" class="btn btn-primary">
+            </div>
+            <div class="form-field">
+              <a href="${pageContext.request.contextPath}/pages/register.jsp">Create Your New Account</a>
+            </div>
+          </form>
+        </div>  
+</body>
+</html>
